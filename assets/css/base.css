@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #3fd0d4;
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #5c5c5c;
+    --header-height: 8rem;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #fff;
+    min-height: 450rem;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.grid {
+    width: 1330px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+img {
+    display: block;
+}
+
+
+/* Col Blog */
+
+.grid__column-1 {
+    width: 60%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.grid__column-2 {
+    width: 30%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+}
+
+.grid__column-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 22%;
+}
+
+.grid__column-5 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.grid__column-3 {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 33.3333%;
+}
+
+.grid__column-3-radius {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 33.3333%;
+}
+
+.grid__full {
+    width: 100%;
+}
+
+.grid__full-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.grid__full-column-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+}
+
+.grid__full-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.grid__full-column-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 33.3333%;
+}
+
+@keyframes changeHeight {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes height {
+    from {
+        height: 0rem;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
